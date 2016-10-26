@@ -9,7 +9,7 @@ print potime
 
 #NY time
 nytime = potime + datetime.timedelta(hours= 3, minutes= 00)
-ytime = time(hour=nytime.hour)
+nytime = time(hour=nytime.hour)
 print "Current Time in New York:"
 print ytime
 
@@ -23,7 +23,7 @@ else:
 lotime = potime + datetime.timedelta(hours= 8, minutes= 00)
 ltime = time(hour= lotime.hour)
 print "Current Time in London:"
-print ltime
+print lotime
 
 if ltime > datetime.time(hour=9, minute= 00) and ltime < datetime.time(hour=21, minute= 00):
     print " The London Branch Is Currently Open. "
