@@ -9,9 +9,9 @@ print potime
 
 #NY time
 nytime = potime + datetime.timedelta(hours= 3, minutes= 00)
-nytime = time(hour=nytime.hour)
+ytime = time(hour=nytime.hour)
 print "Current Time in New York:"
-print ytime
+print nytime
 
 if ytime > datetime.time(hour= 9, minute = 0) and  ytime < datetime.time(hour= 21, minute = 0):
     print " The New York Branch Is Currently Open. "
